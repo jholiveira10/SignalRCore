@@ -63,6 +63,7 @@ namespace RealTimeApi
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
 
+            //RPC -> EndPoint
             app.UseSignalR(cfg => {
                 cfg.MapHub<RealTimeHub>("/RealTimeHub");
             });

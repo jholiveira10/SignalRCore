@@ -13,7 +13,7 @@ namespace RealTimeApi.Hubs
             await Clients.Caller.SendAsync("CadastradoSucesso");
 
 
-            await Clients.All.SendAsync("ReceberPromocao", promocao);
+            await Clients.Others.SendAsync("ReceberPromocao", promocao);
         }
 
 
